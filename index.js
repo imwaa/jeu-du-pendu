@@ -68,7 +68,7 @@ function showNotification(){
   setTimeout(()=>{
     notification.classList.remove("show");
     notification.style.display = "none";
-  },5000);
+  },2000);
 }
 
 //keydown letter press
