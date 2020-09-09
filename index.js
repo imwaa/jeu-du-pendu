@@ -37,9 +37,9 @@ function displayWord(){
 
 //update the wrong letters
 function updateWrongLettersEl(){
-  //Display Wrong Letters
+  //Display Wrong Letterss
   WrongLettersEL.innerHTML = `
-    ${wrongLetters.length > 0 ? '<p>Wrong</p>' : ''}
+    ${wrongLetters.length > 0 ? '<p>Lettres ratées :</p>' : ''}
     ${wrongLetters.map(letter => `<span>${letter}</span>`)}
   `;
   //Display Parts
@@ -55,7 +55,7 @@ function updateWrongLettersEl(){
   });
     // Check if he lost
   if (wrongLetters.length === figureParts.length) {
-    finalMessage.innerText = "Tu a Perdud😒";
+    finalMessage.innerText = "Tu a Perdu😒";
     foundWord.innerText=selectedWord;
 
     popup.style.display ="flex";
