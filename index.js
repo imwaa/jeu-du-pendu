@@ -55,7 +55,7 @@ function updateWrongLettersEl(){
   });
     // Check if he lost
   if (wrongLetters.length === figureParts.length) {
-    finalMessage.innerText = "Tu a Perdu😒";
+    finalMessage.innerText = "Tu a Perdud😒";
     foundWord.innerText=selectedWord;
 
     popup.style.display ="flex";
@@ -64,9 +64,11 @@ function updateWrongLettersEl(){
 
 function showNotification(){
   notification.classList.add("show");
+  notification.style.display = "block";
   setTimeout(()=>{
     notification.classList.remove("show");
-  },2000);
+    notification.style.display = "none";
+  },5000);
 }
 
 //keydown letter press
